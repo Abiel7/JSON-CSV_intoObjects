@@ -42,7 +42,7 @@ public class Assembly {
             Thread.sleep(1000);
             System.out.println("processing");
         }
-        
+        System.out.println(trnascript.getText());
 
     }
 }
