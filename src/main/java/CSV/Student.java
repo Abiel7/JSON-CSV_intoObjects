@@ -1,3 +1,5 @@
+package CSV;
+
 public class Student {
     private String marks;
     private String hobbies;

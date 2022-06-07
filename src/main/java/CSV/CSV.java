@@ -1,3 +1,5 @@
+package CSV;
+
 import java.io.BufferedReader;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
@@ -16,7 +18,7 @@ public final class CSV {
     }
 
 
-    public static List<Student> readStudent(Path path, String delimiter, Charset cr)  throws Exception {
+    public static Iterable<Student> readStudent(Path path, String delimiter, Charset cr)  throws Exception {
         if(path == null || delimiter == null ) {
             throw new IllegalArgumentException("Path or delimiter is null, cannot read file");
         }
